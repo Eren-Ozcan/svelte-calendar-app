@@ -3,7 +3,8 @@
 	import scheduleStore from './schedule-store.js';
 	import Calendar from './Calendar.svelte';
 	import Scheduler from './Scheduler.svelte';
-	
+
+
 	let schedule = {};
 	const unsubscribe = scheduleStore.subscribe(currState => {
 		schedule = currState;
@@ -85,6 +86,7 @@
 
 
 <main>
+	<!-- calender -->
 	<Calendar on:click={handleScheduler}
 						{schedule} />
 		{#if schedulerShowing}
@@ -95,6 +97,7 @@
 								 {appointments}
 									/>
 		{/if}
+		<!-- calender -->
 </main>	
 
 				

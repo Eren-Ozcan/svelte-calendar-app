@@ -133,6 +133,8 @@
 		padding: 0;
 	}
 
+	
+
 	.month ul li {
 		color: white;
 		font-size: 40px;
@@ -191,6 +193,7 @@
 		font-size: 2.2rem;
 		color: #808080;
 		cursor: pointer;
+		top:0px;
 	}
 
 	/* Highlight the "current" day */
